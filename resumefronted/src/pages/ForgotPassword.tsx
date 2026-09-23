@@ -34,7 +34,7 @@ function ForgotPassword() {
 
             setLoading(true);
 
-            const token = await forgotPassword(email);
+            await forgotPassword(email);
 
            
 

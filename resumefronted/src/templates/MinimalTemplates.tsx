@@ -12,6 +12,7 @@ interface MinimalTemplateProps {
     projects: ProjectResponse[];
     skills: SkillResponse[];
     socialLinks: SocialLinkResponse[];
+    accentColor: string;
 }
 
 function MinimalTemplates({
@@ -20,12 +21,14 @@ function MinimalTemplates({
     experience,
     projects,
     skills,
-    socialLinks
+    socialLinks,accentColor
 }: MinimalTemplateProps) {
 
     return (
 
-        <div className="minimal-resume">
+        <div className="minimal-resume"style={{
+        "--accent-color": accentColor
+    } as React.CSSProperties}>
 
             {/* Header */}
 

@@ -1,13 +1,13 @@
 import { useState,useEffect } from "react";
 import { getMyProfile } from "../services/userService";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import useAuthStore from "../store/authStore";
 import{ logout as logoutApi } from "../services/authService"
 function TopHeader() {
 
     const [showProfile, setShowProfile] = useState(false);
     const[user,setUser]=useState({name:""});
-    const[showName,setShowName]=useState(false);
+    // const[showName,setShowName]=useState(false);
     const navigate=useNavigate();
     const {logout,refreshToken}=useAuthStore();
 
@@ -49,7 +49,7 @@ function TopHeader() {
                 try{
                     const data=await getMyProfile();
                     setUser(data);
-                    setShowName(true);
+                    //setShowName(true);
                    
     
                 }

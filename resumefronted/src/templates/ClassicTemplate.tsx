@@ -12,6 +12,7 @@ interface ClassicTemplateProps {
     projects: ProjectResponse[];
     skills: SkillResponse[];
     socialLinks: SocialLinkResponse[];
+    accentColor: string;
 }
 
 function ClassicTemplate({
@@ -20,12 +21,15 @@ function ClassicTemplate({
     experience,
     projects,
     skills,
-    socialLinks
+    socialLinks,accentColor
+
 }: ClassicTemplateProps) {
 
     return (
 
-        <div className="classic-resume">
+        <div className="classic-resume"style={{
+        "--accent-color": accentColor
+    } as React.CSSProperties}>
 
             {/* Header */}
 
