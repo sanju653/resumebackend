@@ -1,0 +1,369 @@
+/* =========================================================
+   RESUMATE — MINIMAL RESUME
+========================================================= */
+
+.minimal-resume {
+    width: 794px;
+    min-height: 1123px;
+
+    margin: 30px auto;
+    padding: 58px 68px;
+
+    background: #ffffff;
+    color: #202124;
+
+    font-family:
+        "Inter",
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 8px 28px rgba(15, 23, 42, 0.10);
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.minimal-header {
+    margin-bottom: 38px;
+}
+
+.minimal-header h1 {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 1.1;
+
+    font-weight: 650;
+
+    letter-spacing: -0.8px;
+
+    color: #111827;
+}
+
+.minimal-header > p {
+    margin: 8px 0 17px;
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    font-weight: 400;
+
+    color: #6b7280;
+}
+
+.minimal-contact {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px 18px;
+
+    font-size: 11.5px;
+
+    color: #6b7280;
+}
+
+.minimal-contact span {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.minimal-section {
+    margin-bottom: 27px;
+}
+
+.minimal-section h2 {
+    margin: 0 0 11px;
+
+    font-size: 11.5px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #4b5563;
+}
+
+.minimal-section > p {
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #374151;
+}
+
+
+/* =========================================================
+   ITEMS
+========================================================= */
+
+.minimal-item {
+    margin-bottom: 19px;
+}
+
+.minimal-item:last-child {
+    margin-bottom: 0;
+}
+
+.minimal-item-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+.minimal-item h3 {
+    margin: 0 0 3px;
+
+    font-size: 13.5px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.minimal-item-header > span {
+    flex-shrink: 0;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    color: #6b7280;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   COMPANY / INSTITUTION
+========================================================= */
+
+.minimal-company {
+    margin: 0;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #4b5563;
+}
+
+.minimal-location {
+    margin: 3px 0;
+
+    font-size: 10.5px;
+
+    color: #9ca3af;
+}
+
+.minimal-item > p {
+    margin: 6px 0 0;
+
+    font-size: 11.8px;
+
+    line-height: 1.65;
+
+    color: #374151;
+}
+
+
+/* =========================================================
+   PROJECT TECHNOLOGIES
+========================================================= */
+
+.minimal-technologies {
+    margin-top: 5px;
+
+    font-size: 11px !important;
+
+    font-weight: 500;
+
+    color: #6b7280 !important;
+}
+
+
+/* =========================================================
+   PROJECT LINKS
+========================================================= */
+
+.minimal-project-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px 18px;
+
+    margin-top: 7px;
+}
+
+.minimal-project-links a {
+    font-size: 11px;
+
+    color: #374151;
+
+    text-decoration: underline;
+
+    text-underline-offset: 2px;
+}
+
+.minimal-project-links a:hover {
+    color: #111827;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.minimal-skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px 20px;
+}
+
+.minimal-skills span {
+    position: relative;
+
+    font-size: 11.5px;
+
+    color: #374151;
+}
+
+/* Small separator dot */
+
+.minimal-skills span:not(:last-child)::after {
+    content: "•";
+
+    position: absolute;
+
+    right: -13px;
+
+    color: #c4c9d1;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.minimal-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px 20px;
+}
+
+.minimal-links a {
+    font-size: 11.5px;
+
+    color: #374151;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #d1d5db;
+
+    padding-bottom: 1px;
+}
+
+.minimal-links a:hover {
+    color: #111827;
+
+    border-bottom-color: #6b7280;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .minimal-resume {
+        width: 95%;
+
+        min-height: auto;
+
+        padding: 38px 32px;
+
+        margin: 20px auto;
+    }
+
+    .minimal-header h1 {
+        font-size: 30px;
+    }
+
+    .minimal-header > p {
+        font-size: 14px;
+    }
+
+    .minimal-item-header {
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+    .minimal-item-header > span {
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    @page {
+        size: A4;
+
+        margin: 0;
+    }
+
+    .minimal-resume {
+        width: 210mm;
+
+        min-height: 297mm;
+
+        margin: 0;
+
+        padding: 18mm;
+
+        box-shadow: none;
+    }
+
+    .minimal-project-links a,
+    .minimal-links a {
+        color: #202124;
+
+        text-decoration: none;
+
+        border-bottom: none;
+    }
+}

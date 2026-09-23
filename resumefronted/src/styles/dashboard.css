@@ -1,0 +1,474 @@
+/* =========================
+   Dashboard
+========================= */
+
+.main-area {
+    margin-left: 230px;
+    min-height: 100vh;
+    background: var(--page-bg);
+}
+
+.dashboard-content {
+    padding: 32px;
+}
+
+
+/* =========================
+   Welcome Section
+========================= */
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.welcome-section h1 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.welcome-section p {
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    font-size: 15px;
+
+    color: var(--text-secondary);
+}
+
+
+/* Create Resume Button */
+
+.create-resume-btn {
+    border: none;
+    border-radius: 7px;
+
+    padding: 11px 18px;
+
+    background: var(--accent-color);
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.create-resume-btn:hover {
+    background: var(--accent-hover);
+}
+
+.create-resume-btn i {
+    font-size: 15px;
+}
+
+
+/* =========================
+   Resume Section
+========================= */
+
+.resumes-section {
+    margin-top: 10px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.section-header h2 {
+    margin: 0;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.section-header p {
+    margin: 5px 0 0;
+
+    font-size: 13px;
+
+    color: var(--text-secondary);
+}
+
+.view-all-btn {
+    border: none;
+    background: transparent;
+
+    color: var(--accent-color);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Resume Grid
+========================= */
+
+.resume-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================
+   Resume Card
+========================= */
+
+.resume-card {
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    padding: 16px;
+
+    transition: 0.2s;
+}
+
+.resume-card:hover {
+    border-color: var(--border-color);
+
+    box-shadow: var(--card-shadow);
+}
+
+
+/* =========================
+   Mini Resume Preview
+========================= */
+
+.resume-preview {
+    height: 190px;
+
+    background: var(--surface-bg);
+
+    border: 1px solid var(--border-color);
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+}
+
+.preview-name {
+    font-size: 13px;
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+    margin-bottom: 10px;
+}
+
+.preview-line {
+    width: 80%;
+    height: 4px;
+
+    background: var(--border-color);
+
+    margin-bottom: 6px;
+
+    border-radius: 3px;
+}
+
+.preview-line.short {
+    width: 45%;
+}
+
+.preview-section-title {
+    margin-top: 13px;
+    margin-bottom: 7px;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    color: var(--accent-color);
+}
+
+
+/* =========================
+   Resume Information
+========================= */
+
+.resume-info {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-info h3 {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.resume-info span {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: var(--text-muted);
+}
+
+.resume-menu button {
+    border: none;
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Progress
+========================= */
+
+.resume-progress {
+    margin-top: 15px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    color: var(--text-secondary);
+}
+
+.progress-info strong {
+    color: var(--accent-color);
+}
+
+.progress-bar {
+    height: 5px;
+
+    background: var(--border-color);
+
+    border-radius: 5px;
+
+    margin-top: 6px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 85%;
+    height: 100%;
+
+    background: var(--accent-color);
+}
+
+
+/* =========================
+   Continue Editing
+========================= */
+
+.edit-resume-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 9px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+
+    background: var(--card-bg);
+
+    color: var(--text-primary);
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.edit-resume-btn:hover {
+    background: var(--accent-light);
+}
+
+.edit-resume-btn i {
+    margin-left: 7px;
+}
+
+
+/* =========================
+   Create New Resume
+========================= */
+
+.new-resume-card {
+    min-height: 390px;
+
+    border: 1px dashed var(--border-color);
+    border-radius: 10px;
+
+    background: var(--card-bg);
+
+    color: var(--text-primary);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.new-resume-card:hover {
+    border-color: var(--accent-color);
+
+    background: var(--accent-light);
+}
+
+.new-resume-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--accent-light);
+
+    color: var(--accent-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+}
+
+.new-resume-card h3 {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.new-resume-card p {
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .main-area {
+        margin-left: 0;
+    }
+
+    .dashboard-content {
+        padding: 80px 20px 24px;
+    }
+
+    .welcome-section {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .welcome-section h1 {
+        font-size: 23px;
+    }
+
+    .create-resume-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-preview {
+        height: 180px;
+    }
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-content {
+        padding: 75px 14px 20px;
+    }
+
+    .welcome-section h1 {
+        font-size: 21px;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+    }
+
+    .section-header {
+        flex-direction: column;
+    }
+
+    .section-header h2 {
+        font-size: 18px;
+    }
+
+    .view-all-btn {
+        padding: 0;
+    }
+
+    .resume-card {
+        padding: 14px;
+    }
+
+    .new-resume-card {
+        min-height: 280px;
+    }
+}

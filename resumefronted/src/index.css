@@ -1,0 +1,210 @@
+/* =====================================================
+   GLOBAL THEME VARIABLES
+   ===================================================== */
+
+:root {
+    /* Page */
+    --page-bg: #f8f9fb;
+
+    /* Cards / surfaces */
+    --card-bg: #ffffff;
+    --surface-bg: #ffffff;
+
+    /* Text */
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-muted: #8b9299;
+
+    /* Borders */
+    --border-color: #e5e7eb;
+
+    /* Inputs */
+    --input-bg: #ffffff;
+    --input-border: #dfe3e8;
+
+    /* Accent */
+    --accent-color: #0d6efd;
+    --accent-hover: #0b5ed7;
+    --accent-light: #e7f1ff;
+
+    /* Sidebar */
+    --sidebar-bg: #ffffff;
+    --sidebar-text: #6c757d;
+    --sidebar-active-bg: #e7f1ff;
+
+    /* Header */
+    --header-bg: #ffffff;
+
+    /* Shadows */
+    --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =====================================================
+   DARK THEME
+   ===================================================== */
+
+[data-theme="dark"] {
+
+    --page-bg: #121212;
+
+    --card-bg: #1e1e1e;
+    --surface-bg: #1e1e1e;
+
+    --text-primary: #f5f5f5;
+    --text-secondary: #adb5bd;
+    --text-muted: #868e96;
+
+    --border-color: #343434;
+
+    --input-bg: #252525;
+    --input-border: #3a3a3a;
+
+    --sidebar-bg: #181818;
+    --sidebar-text: #adb5bd;
+    --sidebar-active-bg: #292929;
+
+    --header-bg: #181818;
+
+    --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   BLUE ACCENT
+   ===================================================== */
+
+[data-accent="blue"] {
+
+    --accent-color: #0d6efd;
+    --accent-hover: #0b5ed7;
+    --accent-light: #e7f1ff;
+}
+
+
+/* =====================================================
+   DARK ACCENT
+   ===================================================== */
+
+[data-accent="dark"] {
+
+    --accent-color: #343a40;
+    --accent-hover: #212529;
+    --accent-light: #e9ecef;
+}
+
+
+/* =====================================================
+   GREEN ACCENT
+   ===================================================== */
+
+[data-accent="green"] {
+
+    --accent-color: #198754;
+    --accent-hover: #157347;
+    --accent-light: #d1e7dd;
+}
+
+
+/* =====================================================
+   PURPLE ACCENT
+   ===================================================== */
+
+[data-accent="purple"] {
+
+    --accent-color: #6f42c1;
+    --accent-hover: #59359a;
+    --accent-light: #e9ddff;
+}
+
+
+/* =====================================================
+   GLOBAL APP
+   ===================================================== */
+
+html,
+body,
+#root {
+
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+
+    background: var(--page-bg);
+    color: var(--text-primary);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* =====================================================
+   GLOBAL TEXT
+   ===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: var(--text-primary);
+}
+
+p {
+
+    color: var(--text-secondary);
+}
+
+
+/* =====================================================
+   GLOBAL INPUTS
+   ===================================================== */
+
+input,
+textarea,
+select {
+
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border-color: var(--input-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+
+    color: var(--text-muted);
+}
+
+
+/* =====================================================
+   GLOBAL BUTTON HELPERS
+   ===================================================== */
+
+.theme-accent {
+
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.theme-accent:hover {
+
+    background-color: var(--accent-hover);
+}
+
+
+/* =====================================================
+   GLOBAL CARD HELPER
+   ===================================================== */
+
+.theme-card {
+
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}

@@ -1,0 +1,1035 @@
+.home-page {
+    min-height: 100vh;
+
+    background: var(--page-bg);
+    color: var(--text-primary);
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.home-navbar {
+    height: 68px;
+
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border-color);
+
+    background: var(--header-bg);
+}
+
+.home-logo {
+    font-size: 19px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: var(--text-primary);
+}
+
+.home-nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.home-nav-links button,
+.home-login-btn {
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.home-nav-links button:hover,
+.home-login-btn:hover {
+    color: var(--text-primary);
+}
+
+.home-nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.home-signup-btn {
+    border: none;
+    border-radius: 7px;
+
+    padding: 9px 15px;
+
+    background: var(--accent-color);
+    color: #ffffff;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.home-signup-btn:hover {
+    background: var(--accent-hover);
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero-section {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    min-height: 650px;
+
+    padding: 80px 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.hero-content {
+    max-width: 530px;
+}
+
+.hero-label,
+.home-section-heading span,
+.home-cta span {
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: var(--accent-color);
+}
+
+.hero-content h1 {
+    margin: 14px 0 18px;
+
+    font-size: 52px;
+
+    line-height: 1.08;
+
+    font-weight: 650;
+
+    letter-spacing: -1.5px;
+
+    color: var(--text-primary);
+}
+
+.hero-content > p {
+    max-width: 490px;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: var(--text-secondary);
+}
+
+.hero-actions {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+    padding: 11px 17px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.hero-primary-btn {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    border: none;
+
+    background: var(--accent-color);
+    color: #ffffff;
+
+    transition: background-color 0.2s ease;
+}
+
+.hero-primary-btn:hover {
+    background: var(--accent-hover);
+}
+
+.hero-secondary-btn {
+    border: 1px solid var(--border-color);
+
+    background: var(--card-bg);
+
+    color: var(--text-secondary);
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.hero-secondary-btn:hover {
+    background: var(--accent-light);
+
+    border-color: var(--accent-color);
+
+    color: var(--text-primary);
+}
+
+
+/* =========================
+   Resume Preview
+========================= */
+
+.hero-preview-wrapper {
+    display: flex;
+
+    justify-content: center;
+}
+
+.hero-resume-paper {
+    width: 410px;
+
+    min-height: 510px;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe3e8;
+
+    box-shadow: 0 20px 45px rgba(17, 24, 39, 0.10);
+
+    transform: rotate(1deg);
+}
+
+
+/*
+   The resume preview intentionally stays light.
+   It represents the actual resume document.
+*/
+
+.hero-resume-header {
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #111827;
+}
+
+.hero-resume-header h2 {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.hero-resume-header span {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: var(--accent-color);
+}
+
+.hero-resume-header p {
+    margin: 8px 0 0;
+
+    font-size: 8px;
+
+    color: #6b7280;
+}
+
+.hero-resume-section {
+    margin-top: 20px;
+}
+
+.hero-resume-section h3,
+.hero-resume-bottom h3 {
+    margin: 0 0 9px;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: var(--accent-color);
+}
+
+.hero-resume-section strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 9px;
+
+    color: #374151;
+}
+
+.hero-line {
+    width: 85%;
+
+    height: 4px;
+
+    margin-bottom: 6px;
+
+    border-radius: 3px;
+
+    background: #d1d5db;
+}
+
+.hero-line.large {
+    width: 95%;
+}
+
+.hero-line.medium {
+    width: 65%;
+}
+
+.hero-resume-bottom {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   Dummy Resume Profile
+========================= */
+
+.hero-profile-text {
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color: #555;
+
+    margin: 0;
+}
+
+.hero-experience {
+    margin-bottom: 12px;
+}
+
+.hero-experience strong {
+    display: block;
+
+    font-size: 10px;
+
+    color: #222;
+
+    margin-bottom: 2px;
+}
+
+.hero-experience span {
+    display: block;
+
+    font-size: 8px;
+
+    color: #777;
+
+    margin-bottom: 4px;
+}
+
+.hero-experience p {
+    font-size: 8px;
+
+    line-height: 1.4;
+
+    color: #555;
+
+    margin: 0;
+}
+
+.hero-education strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #222;
+
+    margin-bottom: 4px;
+}
+
+.hero-education span {
+    display: block;
+
+    font-size: 8px;
+
+    color: #777;
+
+    margin-bottom: 2px;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.hero-skills-section {
+    width: 45%;
+}
+
+.hero-skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+}
+
+.hero-skills span {
+    font-size: 7px;
+
+    padding: 3px 6px;
+
+    background: #f3f4f6;
+
+    border: 1px solid #ddd;
+
+    border-radius: 3px;
+
+    color: #444;
+}
+
+
+/* =========================
+   Resume Footer
+========================= */
+
+.hero-resume-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 15px;
+
+    padding-top: 8px;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 7px;
+
+    color: #999;
+}
+
+
+/* =========================
+   Section Heading
+========================= */
+
+.home-section-heading {
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.home-section-heading h2 {
+    margin: 10px 0 0;
+
+    font-size: 31px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+
+/* =========================
+   Features
+========================= */
+
+.home-features {
+    padding: 90px 40px;
+
+    border-top: 1px solid var(--border-color);
+
+    background: var(--page-bg);
+}
+
+.feature-grid {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.feature-item {
+    padding: 28px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 10px;
+
+    box-shadow: var(--card-shadow);
+}
+
+.feature-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+
+    background: var(--accent-light);
+
+    color: var(--accent-color);
+}
+
+.feature-item h3 {
+    margin: 0;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.feature-item p {
+    margin: 8px 0 0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   How It Works
+========================= */
+
+.how-section {
+    padding: 90px 40px;
+
+    background: var(--card-bg);
+}
+
+.steps-grid {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.step-item {
+    padding: 20px 0;
+}
+
+.step-number {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: var(--accent-color);
+}
+
+.step-item h3 {
+    margin: 0;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.step-item p {
+    max-width: 280px;
+
+    margin: 8px 0 0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.home-cta {
+    padding: 85px 30px;
+
+    text-align: center;
+
+    background: var(--page-bg);
+
+    border-top: 1px solid var(--border-color);
+}
+
+.home-cta h2 {
+    margin: 12px 0 8px;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.home-cta p {
+    margin: 0 auto;
+
+    max-width: 520px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: var(--text-secondary);
+}
+
+.home-cta button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    padding: 11px 17px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: var(--accent-color);
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.home-cta button:hover {
+    background: var(--accent-hover);
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.home-footer {
+    padding: 35px 40px;
+
+    text-align: center;
+
+    border-top: 1px solid var(--border-color);
+
+    background: var(--card-bg);
+}
+
+.home-footer p {
+    margin: 7px 0;
+
+    font-size: 12px;
+
+    color: var(--text-secondary);
+}
+
+.home-footer > span {
+    font-size: 10px;
+
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
+.home-mobile-menu-btn {
+    display: none;
+
+    width: 38px;
+    height: 38px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 7px;
+
+    background: var(--header-bg);
+
+    color: var(--text-primary);
+
+    font-size: 21px;
+
+    cursor: pointer;
+}
+
+.home-mobile-menu-btn:hover {
+    background: var(--accent-light);
+}
+
+
+/* =========================
+   Mobile Overlay
+========================= */
+
+.home-mobile-overlay {
+    display: none;
+}
+
+
+/* =========================
+   Mobile Menu
+========================= */
+
+.home-mobile-menu {
+    display: none;
+}
+
+.home-mobile-menu-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.home-mobile-close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+.home-mobile-links {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 20px;
+}
+
+.home-mobile-links button {
+    width: 100%;
+
+    padding: 13px 4px;
+
+    border: none;
+
+    border-bottom: 1px solid var(--border-color);
+
+    background: transparent;
+
+    text-align: left;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.home-mobile-links button:hover {
+    color: var(--accent-color);
+}
+
+.home-mobile-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.home-mobile-login,
+.home-mobile-signup {
+    width: 100%;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.home-mobile-login {
+    border: 1px solid var(--border-color);
+
+    background: var(--card-bg);
+
+    color: var(--text-secondary);
+}
+
+.home-mobile-signup {
+    border: none;
+
+    background: var(--accent-color);
+
+    color: #ffffff;
+}
+
+.home-mobile-signup:hover {
+    background: var(--accent-hover);
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .home-navbar {
+        padding: 0 25px;
+    }
+
+    .home-nav-links,
+    .home-nav-actions {
+        display: none;
+    }
+
+    .home-mobile-menu-btn {
+        display: flex;
+    }
+
+    .home-mobile-overlay {
+        display: block;
+
+        position: fixed;
+
+        inset: 0;
+
+        background: rgba(0, 0, 0, 0.25);
+
+        z-index: 1200;
+    }
+
+    .home-mobile-menu {
+        display: block;
+
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        width: 290px;
+
+        max-width: 85vw;
+
+        height: 100vh;
+
+        padding: 24px 20px;
+
+        box-sizing: border-box;
+
+        background: var(--card-bg);
+
+        box-shadow: -8px 0 25px rgba(0, 0, 0, 0.08);
+
+        transform: translateX(100%);
+
+        transition: transform 0.25s ease;
+
+        z-index: 1300;
+    }
+
+    .home-mobile-menu-open {
+        transform: translateX(0);
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        padding: 65px 30px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .hero-content > p {
+        margin: 0 auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .feature-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home-navbar {
+        height: 62px;
+
+        padding: 0 16px;
+    }
+
+    .hero-section {
+        padding: 55px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 37px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .hero-resume-paper {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        min-height: 430px;
+
+        padding: 25px;
+    }
+
+    .hero-resume-header h2 {
+        font-size: 21px;
+    }
+
+    .home-features,
+    .how-section {
+        padding: 65px 20px;
+    }
+
+    .home-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .feature-item {
+        padding: 22px;
+    }
+
+    .home-cta {
+        padding: 65px 20px;
+    }
+
+    .home-cta h2 {
+        font-size: 27px;
+    }
+
+    .home-footer {
+        padding: 30px 20px;
+    }
+}
