@@ -54,7 +54,6 @@ public class RefreshTokenService {
 
     public RefreshToken findByToken(String token) {
 
-        System.out.println("TOKEN RECEIVED BY BACKEND: [" + token + "]");
         return refreshTokenRepository.findByToken(token)
                 .orElseThrow(() ->
                         new BadRequestException("Refresh token not found")
