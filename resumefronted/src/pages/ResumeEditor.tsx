@@ -88,13 +88,13 @@ const handleSave=async()=>{
                 Number(resumeId),
                 resumeData
             );
-             console.log("Resume updated:", data);
+            
             }
 
              else{
 
         const data=await createResume(resumeData);
-         console.log("Resume created:", data);
+       
          // // Go to the newly created resume
          navigate(`/resume/${data.id}`);
              }

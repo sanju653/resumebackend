@@ -71,7 +71,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     location: data.location || ""
 });
 
-console.log("Profile data:", data);
+
         }
     
         catch(error){

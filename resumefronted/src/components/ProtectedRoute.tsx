@@ -10,9 +10,7 @@ function ProtectedRoute() {
         (state) => state.isLoggedIn
     );
     const location = useLocation();
-     console.log("PROTECTED ROUTE:");
-    console.log("accessToken:", accessToken);
-    console.log("isLoggedIn:", isLoggedIn);
+  
 
     if (!accessToken || !isLoggedIn) {
         return (

@@ -88,9 +88,6 @@ api.interceptors.response.use(
                 }
 
 
-                console.log(
-                    "Access token expired. Refreshing..."
-                );
 
 
                 // Send refresh token
@@ -105,11 +102,6 @@ api.interceptors.response.use(
                 const newAccessToken =
                     response.data.accessToken;
 
-
-                console.log(
-                    "New access token received:",
-                    newAccessToken
-                );
 
 
                 // Save new access token
@@ -131,10 +123,6 @@ api.interceptors.response.use(
 
             } catch (refreshError) {
 
-                console.log(
-                    "Refresh token failed:",
-                    refreshError
-                );
 
 
                 // Refresh token is invalid/expired

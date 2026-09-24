@@ -68,7 +68,7 @@ function Login() {
                 password
             });
 
-            console.log(data);
+          
 
             loginUser(
                 data.accessToken,
@@ -79,7 +79,7 @@ function Login() {
                 location.state?.from?.pathname ||
                 "/dashboard";
 
-            console.log("REDIRECTING TO:", from);
+          
 
             navigate(from, {
                 replace: true
@@ -87,10 +87,6 @@ function Login() {
 
         } catch (error: any) {
 
-            console.log(error);
-             console.log("LOGIN ERROR:", error);
-    console.log("STATUS:", error.response?.status);
-    console.log("DATA:", error.response?.data);
 
             if (error.response?.status === 400) {
 
@@ -295,7 +291,7 @@ function Login() {
                         className="social-btn"
                           onClick={() => {
         window.location.href =
-       window.location.href =
+      
     "https://resumebackend-xvbd.onrender.com/oauth2/authorization/github";;
     }}
 

@@ -110,7 +110,7 @@ function Signup() {
                 confirmPassword
             });
 
-            console.log("Signup successful:", data);
+           
 
             navigate("/login");
 

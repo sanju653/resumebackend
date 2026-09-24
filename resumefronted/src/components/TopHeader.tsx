@@ -27,7 +27,6 @@ function TopHeader() {
 
         } else {
 
-            console.log("3. No refresh token found");
 
         }
 

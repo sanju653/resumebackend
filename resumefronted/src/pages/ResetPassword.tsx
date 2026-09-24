@@ -99,7 +99,7 @@ function ResetPassword() {
 
         } catch (error: any) {
 
-            console.log(error);
+           
 
             setErrors(prev => ({
                 ...prev,
