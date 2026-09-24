@@ -84,7 +84,7 @@ const handleSave=async()=>{
          if (resumeId && resumeId!=="new") {
 
             // Editing existing resume
-            const data = await updateResume(
+             await updateResume(
                 Number(resumeId),
                 resumeData
             );

@@ -103,7 +103,7 @@ function Signup() {
 
         try {
 
-            const data = await signup({
+             await signup({
                 name,
                 email,
                 password,
