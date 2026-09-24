@@ -174,7 +174,7 @@ public class OAuth2SuccessHandler
 
         // Send tokens to React
         String redirectUrl =
-                "http://localhost:5173/oauth2/success"
+                "https://resumebackend-blue.vercel.app/oauth2/success"
                         + "?accessToken=" + accessToken
                         + "&refreshToken="
                         + refreshToken.getToken();

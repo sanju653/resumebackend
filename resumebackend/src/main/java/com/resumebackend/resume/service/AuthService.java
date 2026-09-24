@@ -86,7 +86,7 @@ public class AuthService {
         PasswordResetToken resetToken =
                 passwordResetTokenService.createToken(user);
         String resetLink =
-                "http://localhost:5173/reset-password?token="
+                "https://resumebackend-blue.vercel.app/reset-password?token="
                         + resetToken.getToken();
         emailService.sendPasswordResetEmail(
                 user.getEmail(),
