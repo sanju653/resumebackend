@@ -292,7 +292,7 @@ function Login() {
                           onClick={() => {
         window.location.href =
       
-    "https://resumebackend-xvbd.onrender.com/oauth2/authorization/github";;
+    "https://resumebackend-xvbd.onrender.com/oauth2/authorization/github";
     }}
 
                     >

@@ -136,7 +136,7 @@ api.interceptors.response.use(
         }
 
 
-        return Promise.reject(
+        return Promise.reject(error
             
         );
     }
