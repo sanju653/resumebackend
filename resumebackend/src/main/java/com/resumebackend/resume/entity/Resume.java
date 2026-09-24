@@ -32,7 +32,14 @@ public class Resume {
     private String jobRole;
 
 
-
+    // Resume Activities
+    @Builder.Default
+    @OneToMany(
+            mappedBy = "resume",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<ResumeActivity> activities = new ArrayList<>();
 
    // Resume belongs to one User
    @ManyToOne
