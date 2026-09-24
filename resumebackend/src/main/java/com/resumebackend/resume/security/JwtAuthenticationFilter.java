@@ -52,12 +52,10 @@ public class JwtAuthenticationFilter  extends OncePerRequestFilter {
                 SecurityContextHolder
                         .getContext()
                         .setAuthentication(authentication);
-            }else{
-                System.out.println("JWT INVALID for: " + email);
             }
         }
         } catch (JwtException | IllegalArgumentException e) {
-            System.out.println("JWT ERROR: " + e.getMessage());
+
             SecurityContextHolder.clearContext();
 
             filterChain.doFilter(request, response);
