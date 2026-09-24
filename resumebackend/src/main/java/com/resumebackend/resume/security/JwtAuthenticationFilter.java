@@ -36,7 +36,7 @@ public class JwtAuthenticationFilter  extends OncePerRequestFilter {
             UserDetails userDetails =
                     userDetailsService.loadUserByUsername(email);
             if (jwtService.isTokenValid(token, email)) {
-
+                System.out.println("JWT VALID for: " + email);
                 UsernamePasswordAuthenticationToken authentication =
                         new UsernamePasswordAuthenticationToken(
                                 userDetails,
@@ -52,10 +52,12 @@ public class JwtAuthenticationFilter  extends OncePerRequestFilter {
                 SecurityContextHolder
                         .getContext()
                         .setAuthentication(authentication);
+            }else{
+                System.out.println("JWT INVALID for: " + email);
             }
         }
         } catch (JwtException | IllegalArgumentException e) {
-
+            System.out.println("JWT ERROR: " + e.getMessage());
             SecurityContextHolder.clearContext();
 
             filterChain.doFilter(request, response);
