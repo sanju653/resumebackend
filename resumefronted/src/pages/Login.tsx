@@ -283,8 +283,7 @@ function Login() {
 
                             onClick={() => {
         window.location.href =
-            "http://localhost:8080/oauth2/authorization/google";
-    }}
+ "https://resumebackend-xvbd.onrender.com/oauth2/authorization/google";    }}
 
                     >
                         <i className="bi bi-google"></i>
@@ -296,7 +295,8 @@ function Login() {
                         className="social-btn"
                           onClick={() => {
         window.location.href =
-            "http://localhost:8080/oauth2/authorization/github";
+       window.location.href =
+    "https://resumebackend-xvbd.onrender.com/oauth2/authorization/github";;
     }}
 
                     >
